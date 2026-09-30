@@ -1,0 +1,5 @@
+node_modules/
+coverage/
+health.json
+metrics.prom
+incidents.sarif

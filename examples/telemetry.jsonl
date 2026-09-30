@@ -1,0 +1,5 @@
+{"deviceId":"board-a","timestamp":1000,"metrics":{"voltage":3.30,"current":0.12,"temperature":32}}
+{"deviceId":"board-a","timestamp":2000,"metrics":{"voltage":3.50,"current":0.14,"temperature":34}}
+{"deviceId":"board-a","timestamp":3000,"metrics":{"voltage":3.52,"current":0.15,"temperature":35}}
+{"deviceId":"board-b","timestamp":1000,"metrics":{"voltage":3.29,"current":0.10,"temperature":31}}
+{"deviceId":"board-b","timestamp":2000,"metrics":{"voltage":3.31,"current":0.11,"temperature":32}}

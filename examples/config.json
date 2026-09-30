@@ -1,0 +1,23 @@
+{
+  "maxHistory": 100,
+  "metrics": {
+    "voltage": { "unit": "V" },
+    "current": { "unit": "A" },
+    "temperature": { "unit": "C" }
+  },
+  "rules": {
+    "voltage-out-of-range": {
+      "metric": "voltage", "severity": "error", "forSamples": 2, "clearSamples": 2,
+      "condition": { "op": "outside", "min": 3.15, "max": 3.45 },
+      "message": "3V3 rail outside tolerance"
+    },
+    "over-temperature": {
+      "metric": "temperature", "severity": "critical",
+      "condition": { "op": "above", "value": 85 }
+    },
+    "telemetry-stale": {
+      "metric": "telemetry", "severity": "warning",
+      "condition": { "op": "stale", "maxAgeMs": 5000 }
+    }
+  }
+}
